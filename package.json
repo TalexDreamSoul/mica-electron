@@ -1,7 +1,7 @@
 {
-  "name": "mica-electron",
-  "version": "1.4.5",
-  "description": "Tool to add mica effect of windows 11 in electron app",
+  "name": "talex-mica-electron",
+  "version": "1.0.0",
+  "description": "Tool to add mica effect of windows 11 in electron app (Reloaded)",
   "main": "main.js",
   "types": "./types/index.d.ts",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GregVido/mica-electron.git"
+    "url": "git+https://github.com/TalexDreamSoul/mica-electron.git"
   },
   "keywords": [
     "electron",
@@ -20,11 +20,18 @@
     "glasstron"
   ],
   "author": "GregVido",
+  "contributors": [
+    {
+      "name": "TalexDreamSoul",
+      "email": "TalexDreamSoul@Gmail.com",
+      "url": "https://github.com/TalexDreamSoul"
+    }
+  ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/GregVido/mica-electron/issues"
+    "url": "https://github.com/TalexDreamSoul/mica-electron/issues"
   },
-  "homepage": "https://github.com/GregVido/mica-electron",
+  "homepage": "https://github.com/TalexDreamSoul/mica-electron",
   "devDependencies": {
     "electron": "^22.3.0",
     "electron-rebuild": "^3.2.9"

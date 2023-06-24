@@ -1,9 +1,9 @@
-<h1 align=center>Mica Electron</h1>
+<h1 align=center>Mica Electron (Reloaded)</h1>
 <div align=center>
 <img src="https://micadiscord.com/img/preview/title.png" name="exemple">
 
 <b>Mica Electron</b> is a tool to add mica effect on electron app.<br>
-This is created by <a href="https://www.youtube.com/gregvido">GregVido</a>.<br>
+This is created by <a href="https://www.youtube.com/gregvido">GregVido</a>, reloaded by <a href="https://www.github.com/TalexDreamSoul">TalexDreamSoul</a>.<br>
 <b>Mica electron is now compatible with windows 10</b>
 </div>
 
@@ -21,12 +21,15 @@ This is created by <a href="https://www.youtube.com/gregvido">GregVido</a>.<br>
 
 ## Quickstart
 ```bash
-$ npm install mica-electron
+npm install talex-mica-electron
 ```
 ```js
 const electron = require('electron');
-const { PARAMS, VALUE,  MicaBrowserWindow, IS_WINDOWS_11, WIN10 } = require('mica-electron');
+const { useMicaElectron, PARAMS, VALUE,  MicaBrowserWindow, IS_WINDOWS_11, WIN10 } = require('talex-mica-electron');
 const path = require('path');
+
+// Run with default path
+useMicaElectron()
 
 electron.app.on('ready', () => {
     const win = new MicaBrowserWindow({
@@ -238,7 +241,7 @@ const WIN10 = {
   If you want use `mica-electron` with 32 bits electron app, rebuild C++ script
 
 ``` bash
-$ cd .\node_modules\mica-electron\
+cd .\node_modules\talex-mica-electron\
 $ node-gyp rebuild --arch=ia32
 $ cd ..\..\
 $ .\node_modules\.bin\electron-rebuild --arch=ia32
